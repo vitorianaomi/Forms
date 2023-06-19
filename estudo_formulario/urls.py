@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from form.views import cadastro_aluno
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('cadastro_aluno/', cadastro_aluno, name='cadastro_aluno'),
 ]
